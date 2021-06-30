@@ -32,7 +32,7 @@ const Project = ({ projects }) => {
       {projects.map((project, key) => {
         return (
           <div
-            className={`flex flex-col mx-5 md:mx-20 my-16 md:${
+            className={`flex flex-col container mx-auto w-full my-16 md:${
               key % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
             key={key}
