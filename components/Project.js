@@ -27,7 +27,7 @@ const Project = ({ projects }) => {
       initial="hidden"
       animate={controls}
       variants={variants}
-      transition={{ duration: 4 }}
+      transition={{ duration: 2.5 }}
     >
       {projects.map((project, key) => {
         return (
@@ -64,14 +64,12 @@ const Project = ({ projects }) => {
               transition={{ delay: 1, duration: 1 }}
               className="group m-5 md:w-6/12 relative"
             >
-              {/* <div className="absolute h-full bg-green-800 z-30 opacity-60 group-hover:opacity-0"></div> */}
               <Image
                 alt={project.name}
                 src={project.asset}
                 width={800}
                 height={600}
                 layout="responsive"
-                className="relative z-20"
               />
             </motion.div>
           </div>
