@@ -3,7 +3,10 @@ import { ExternalLinkIcon, FolderAddIcon } from "@heroicons/react/outline";
 
 const Pproject = ({ projectsp }) => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div
+      id="projects"
+      className="flex justify-center items-center md:container md:mx-20 mt-60"
+    >
       <div className="md:conatiner md:mx-40 grid cols-1 md:grid-cols-3 gap-2 mb-10 ">
         {projectsp.map((x, i) => {
           return (

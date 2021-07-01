@@ -8,8 +8,8 @@ const variants = {
 
 const Banner = () => {
   return (
-    <div>
-      <div className="p-10">
+    <div className="p-8 md:container md:mx-40">
+      <div>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -24,7 +24,7 @@ const Banner = () => {
           animate="visible"
           variants={variants}
           transition={{ delay: 1.5, duration: 1.5 }}
-          className="text-5xl md:text-7xl text-gray-300 mb-4 md:mb-7"
+          className="text-5xl md:text-7xl text-white mb-4 md:mb-7"
         >
           Shawin Mendis.
         </motion.div>
@@ -33,7 +33,7 @@ const Banner = () => {
           animate="visible"
           variants={variants}
           transition={{ delay: 1.5, duration: 2 }}
-          className="text-4xl md:text-6xl text-gray-400 mb-4 md:mb-7"
+          className="text-4xl md:text-6xl text-gray-300 mb-4 md:mb-7"
         >
           Building Digital Experiences.
         </motion.div>
@@ -42,7 +42,7 @@ const Banner = () => {
           animate="visible"
           variants={variants}
           transition={{ delay: 1.5, duration: 2.5 }}
-          className="w-full text-lg text-gray-400 md:text-lg mb-4 md:mb-7 md:w-6/12"
+          className="w-full text-lg text-gray-200 md:text-lg mb-4 md:mb-7 md:w-6/12"
         >
           I&apos;m a melbourne based software engineer who specializes in
           building digital experiences. I&apos;m a results-driven software

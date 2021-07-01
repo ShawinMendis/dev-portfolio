@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import NavBar from "../components/NavBar";
 import Social from "../components/Social";
+import React, { useState, useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
   return (

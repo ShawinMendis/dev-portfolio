@@ -75,21 +75,17 @@ export default function Home() {
       </Head>
 
       <div>
-        <div className="md:mx-48 md:mt-8">
+        <div className="mb-60">
           <Banner />
         </div>
-        <div id="about">
-          <AboutMe />
-        </div>
-        <div id="latest">
-          <Project projects={projects} />
-        </div>
-        <div id="projects">
-          <Pproject projectsp={projectsp} />
-        </div>
-        <div id="contact">
-          <Contact />
-        </div>
+
+        <AboutMe />
+
+        <Project projects={projects} />
+
+        <Pproject projectsp={projectsp} />
+
+        <Contact />
       </div>
     </div>
   );
