@@ -22,6 +22,7 @@ const Contact = () => {
 
   return (
     <motion.div
+      id="contact"
       ref={ref}
       initial="hidden"
       animate={controls}

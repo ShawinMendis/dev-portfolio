@@ -23,22 +23,24 @@ const Project = ({ projects }) => {
 
   return (
     <motion.div
+      id="latest"
       ref={ref}
       initial="hidden"
       animate={controls}
       variants={variants}
-      transition={{ duration: 4 }}
+      transition={{ duration: 2.5 }}
+      className="flex flex-col items-center container mx-auto mt-40"
     >
       {projects.map((project, key) => {
         return (
           <div
-            className={`flex flex-col mx-5 md:mx-20 my-16 md:${
+            className={`flex flex-col my-5 p-8 md:${
               key % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
             key={key}
           >
             <div
-              className={`flex flex-col justify-center md:w-6/12 items-start md:${
+              className={`flex flex-col justify-center w-full md:w-6/12 items-start md:${
                 key % 2 === 0 ? "items-start" : "items-end"
               }`}
             >
@@ -47,7 +49,7 @@ const Project = ({ projects }) => {
               <p className="text-lg text-gray-400 bg-blue-shade mb-4 p-4 shadow-xl">
                 {project.description}
               </p>
-              <div className="flex flex-row text-sm text-gray-300">
+              <div className="flex flex-row text-sm text-gray-300 my-4">
                 {project.tech.map((tech, i) => {
                   return (
                     <p className="mr-3" key={i}>
@@ -62,16 +64,14 @@ const Project = ({ projects }) => {
               animate="visible"
               variants={variants}
               transition={{ delay: 1, duration: 1 }}
-              className="group m-5 md:w-6/12 relative"
+              className="mx-2 md:w-6/12"
             >
-              {/* <div className="absolute h-full bg-green-800 z-30 opacity-60 group-hover:opacity-0"></div> */}
               <Image
                 alt={project.name}
                 src={project.asset}
                 width={800}
                 height={600}
                 layout="responsive"
-                className="relative z-20"
               />
             </motion.div>
           </div>

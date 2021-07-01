@@ -43,9 +43,9 @@ const AllNavItems = [
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between p-5 shadow-lg sticky top-0 z-50 bg-blue-shade2 opacity-75">
+    <nav className="flex justify-between p-5 shadow-lg top-0 z-50 bg-blue-shade2 opacity-75">
       <LogoAnimation />
-      <div className="flex flex-wrap">
+      <div className="hidden md:flex md:flex-wrap">
         {AllNavItems.map((item, i) => {
           return (
             <motion.div
